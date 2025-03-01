@@ -1,82 +1,70 @@
 /* Nour Alhuda Ghazwan Safia 2216847 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
 }
 
 header {
     text-align: center;
-    background: #490d0d;
+    background: #4d4150;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
+    border-bottom: 4px solid #495057;
 }
 
 header img {
     width: 150px;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 20px;
+    border: 3px solid #fff;
 }
 
 section {
-    width: 80%;
+    max-width: 800px;
     margin: 20px auto;
-    background: rgb(232, 231, 213);
+    background: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    position: relative; 
+    border-top: 2px dashed #3a025a;
 }
 
+section:not(:last-child) {
+    border-bottom: 2px dashed #3a025a; 
+}
 h2 {
-    color: #333;
+    color: #343a40;
+    padding-bottom: 10px;
 }
-
 .project {
-    background: rgb(232, 231, 213);
-    padding: 10px;
-    margin-bottom: 10px;
-    border-left: 5px solid #490d0d;
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #3a025a;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-button {
-    background: #490d0d;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background: #555;
+.project h3 {
+    color: #3a025a;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background: #490d0d;
+    padding: 15px;
+    background: #4d4150;
     color: white;
     margin-top: 20px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #3a025a;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
